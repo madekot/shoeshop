@@ -83,7 +83,7 @@ a {
   border: none;
 }
 
-.button::after {
+.button--frame::after {
   content: "";
   position: absolute;
   top: 10px;
@@ -95,6 +95,19 @@ a {
   border: 3px solid #82f4d3;
   border-radius: 3px;
 }
+
+/* .button::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -15px;
+
+  width: 100%;
+  height: 100%;
+
+  border: 3px solid #82f4d3;
+  border-radius: 3px;
+} */
 
 .partner__button {
   margin-bottom: 15px;
@@ -253,6 +266,8 @@ a {
   position: relative;
 
   display: flex;
+  min-height: 390px;
+  margin-bottom: 90px;
   padding-top: 200px;
 }
 
@@ -290,13 +305,13 @@ a {
 }
 
 .product__title {
-  font-family: 'Cormorant Garamond', 'Times new roman', serif;
-  font-weight: 500;
   margin: 0;
   margin-bottom: 30px;
 
+  font-weight: 500;
   font-size: 45px;
   line-height: 0.55;
+  font-family: "Cormorant Garamond", "Times new roman", serif;
   color: #000000;
 }
 
@@ -322,4 +337,101 @@ a {
 .button--frame-top::after {
   top: -10px;
   left: -15px;
+}
+
+.page-main__popular {
+  margin-bottom: 100px;
+}
+
+.popular__title {
+  margin: 0;
+  margin-bottom: 60px;
+
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 0.55;
+  font-family: "Cormorant Garamond", "Times new roman", serif;
+  color: #000000;
+}
+
+.popular__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.popular__item {
+  display: flex;
+  flex-wrap: wrap;
+  width: 250px;
+}
+
+.popular__image-container {
+  margin-bottom: 65px;
+  position: relative;
+}
+
+.popular__image-container:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(130, 244, 211, 0.87);
+  box-shadow: inset 0 0 0 10px #f1f0f0;
+}
+
+.popular__button {
+  visibility: hidden;
+  position: absolute;
+  top: 130px;
+  left: 50%;
+  white-space: nowrap;
+}
+
+.popular__item:hover .popular__button {
+  visibility: visible;
+}
+
+.button--transparent {
+  transform: translate(-50%, 0);
+  padding: 8px 28px;
+  border: 2px solid #ffffff;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.popular__text-container {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.popular__text-container-row {
+  margin: 0;
+  font-size: 15px;
+  line-height: 2;
+  margin-bottom: 30px;
+}
+
+.popular__product-name {
+  color: #000000;
+  margin-right: 25px;
+}
+
+.product__shop {
+  color: #bbbbbb;
+}
+
+.popular__price {
+  margin: 0;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 25px;
+  line-height: 1.2;
+  color: #999999;
 }
