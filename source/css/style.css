@@ -627,19 +627,19 @@ a {
 /* ========= blog ========= */
 
 .blog {
-  min-height: 800px
-
+  min-height: 800px;
 }
 
 .blog__inner {
   max-width: 1170px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .blog__content {
   position: relative;
+
   display: flex;
   flex-wrap: wrap;
 }
@@ -648,6 +648,7 @@ a {
   margin: 0;
   margin: 0 auto;
   margin-bottom: 80px;
+
   font-weight: 500;
   font-size: 45px;
   line-height: 0.55;
@@ -658,47 +659,53 @@ a {
 .blog-news {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
 .blog__news {
-  padding-left: 584px;
-  padding-bottom: 360px;
   margin-left: auto;
+  padding-bottom: 360px;
+  padding-left: 584px;
 }
 
 .blog-news__item {
   position: relative;
+
   display: flex;
   flex-wrap: wrap;
 }
 
 .blog-news__cadre {
   position: absolute;
-  left: -520px;
   top: 0;
+  left: -520px;
 }
 
 .blog-news__cadre::after {
   right: -150px;
   bottom: -145px;
+
   width: 264px;
   height: 350px;
-  background-position: right bottom;
-  background-repeat: no-repeat;
+
   background-image: url("../image/blog-news__nike.png"), linear-gradient(to top, #65e0bc, #c9f9eb);
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 
 .blog-news__cadre::before {
   content: "";
   position: absolute;
-  left: -80px;
   top: -65px;
+  left: -80px;
+  z-index: -10;
+
   width: 264px;
   height: 350px;
+
   border: 10px solid #f9f9f9;
   border-radius: 15px;
-  z-index: -10;
 }
 
 .cadre__blog-news {
@@ -706,22 +713,22 @@ a {
   height: 460px;
 }
 
-.blog-news__text-content {
 
-}
 
 .blog-news__title-item {
-  font-family: "Cormorant Garamond", "Times new roman", serif;
   margin: 0;
   margin-bottom: 20px;
+
   font-size: 20px;
   line-height: 1.25;
+  font-family: "Cormorant Garamond", "Times new roman", serif;
   color: #000000;
 }
 
 .blog-news__paragraf {
   margin: 0;
   margin-bottom: 70px;
+
   font-size: 15px;
   line-height: 1.6;
   color: #888888;
@@ -736,8 +743,8 @@ a {
 
 .blog__slider {
   position: absolute;
-  bottom: 120px;
   right: 0;
+  bottom: 120px;
 }
 
 .slider__content {
@@ -755,6 +762,7 @@ a {
 
 .slider__color-toggle {
   position: relative;
+
   display: flex;
   flex-wrap: wrap;
   margin-right: 20px;
@@ -762,26 +770,30 @@ a {
 }
 
 .slider__button {
-  border: none;
   padding: 0;
+
   background-color: transparent;
+  border: none;
 }
 
 .slider__color-toggle::after {
   content: "";
   position: absolute;
-  width: 45px;
-  right: 0;
   top: 50%;
+  right: 0;
+
+  width: 45px;
   height: 2px;
+
   background-color: #0e0e0e;
 }
 
 .slider__color {
   width: 15px;
   height: 15px;
-  border-radius: 50%;
   margin-right: 15px;
+
+  border-radius: 50%;
 }
 
 .slider__color:last-child {
@@ -803,8 +815,9 @@ a {
 .slider__active-color {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+
   background-color: #ffffff;
+  border-radius: 50%;
   box-shadow: inset 0 0 0 5px #97f0d6;
 }
 
@@ -837,6 +850,7 @@ a {
   width: 9px;
   height: 14px;
   margin-right: 14px;
+
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -852,3 +866,90 @@ a {
 .slider__arrow--next {
   background-image: url(../image/slider__next.png);
 }
+
+/* ========= page-footer ========= */
+
+.page__foter {
+  /*  */
+}
+
+.page-footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-footer__inner {
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.page-foter__logo-conteiner {
+  width: 210px;
+  margin-right: 68px;
+}
+
+.page-foter__list-link {
+  /*  */
+}
+
+/* ====== page-footer-list-link ====== */
+
+.page-footer-list-link {
+  /*  */
+}
+
+.page-footer-list-link__item {
+  /*  */
+}
+
+.page-footer-list-link__link {
+  /*  */
+}
+
+.page-footer__list-link-conteiner {
+  width: 321px;
+  margin-right: 99px;
+}
+
+/* ====== page-footer-list-link ====== end  */
+
+.page-footer__form-social__container {
+  width: 472px;
+}
+
+.page-footer__form-container {
+  /*  */
+}
+
+/* ====== form-subscription ====== */
+.form-subscription {
+  /*  */
+}
+
+.form-subscription__title {
+  /*  */
+}
+
+.form-subscription__form {
+  /*  */
+}
+
+.form-subscription__email-field-conteiner {
+  /*  */
+}
+
+.form-subscription__email-field {
+  /*  */
+}
+
+.form-subscription__button {
+  /*  */
+}
+/* ====== form-subscription ====== end*/
+
+.page__foter__social-list {
+  /*  */
+}
+/* ========= page-footer end========= */
