@@ -29,12 +29,8 @@ a {
 }
 
 .button-round {
-  position: relative;
-
   display: block;
   box-sizing: content-box;
-  width: 52px;
-  height: 52px;
   margin: 0;
   padding: 0;
 
@@ -48,6 +44,7 @@ a {
 }
 
 .site-navigaton__button {
+  position: relative;
   width: 55px;
   height: 55px;
 }
@@ -199,14 +196,11 @@ a {
 
 .social-list {
   display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
 
   list-style: none;
-}
-
-.social-list--align-column {
-  flex-direction: column;
 }
 
 .page-header__social-list {
@@ -220,23 +214,26 @@ a {
 }
 
 .social-list__link {
+  display: block;
+  width: 52px;
+  height: 52px;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
-.social-list__link--twitter-green {
+.social-list__link--twitter {
   background-image: url(../image/social-list__twitter-green.png);
 }
 
-.social-list__link--facebook-white {
+.social-list__link--facebook {
   background-image: url(../image/social-list__facebook-white.png);
 }
 
-.social-list__link--google-white {
+.social-list__link--google {
   background-image: url(../image/social-list__google-white.png);
 }
 
-.social-list__link--pinterest-white {
+.social-list__link--pinterest {
   background-image: url(../image/social-list__pinterest-white.png);
 }
 
@@ -983,7 +980,7 @@ a {
 }
 
 .page-footer__form-container {
-  /*  */
+  margin-bottom: 20px;
 }
 
 /* ====== form-subscription ====== */
@@ -1027,6 +1024,36 @@ a {
   min-width: 146px;
   padding: 8px 32px;
 }
+
+.page-foter__social-list {
+  flex-direction: row;
+  margin-left: -15px;
+}
+
+.page-foter__social-list-item {
+  /*  */
+}
+
+.page-foter__social-list-link {
+  /*  */
+}
+
+.page-foter__social-list-link--twitter {
+  background-image: url(../image/social-list__twitter-green.png);
+}
+
+.page-foter__social-list-link--facebook {
+  background-image: url(../image/social-list__facebook--gray.png);
+}
+
+.page-foter__social-list-link--google {
+  background-image: url(../image/social-list__google--gray.png);
+}
+
+.page-foter__social-list-link--pinterest {
+  background-image: url(../image/social-list__pinterest--gray.png);
+}
+
 /* ====== form-subscription ====== end*/
 
 .page__foter__social-list {
